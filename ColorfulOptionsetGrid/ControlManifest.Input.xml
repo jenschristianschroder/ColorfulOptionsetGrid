@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="ORBIS" constructor="ColorfulOptionsetGrid" version="0.0.16" display-name-key="ORBIS_ColorfulOptionsetGrid" description-key="ORBIS_ColorfulOptionsetGrid_Description" control-type="standard" preview-image="css/imgs/Preview.png">
+  <control namespace="ORBIS" constructor="ColorfulOptionsetGrid" version="0.0.18" display-name-key="ORBIS_ColorfulOptionsetGrid" description-key="ORBIS_ColorfulOptionsetGrid_Description" control-type="standard" preview-image="css/imgs/Preview.png">
     <!-- dataset node represents a set of entity records on CDS; allow more than one datasets -->
     <data-set name="dataset" display-name-key="Dataset" cds-data-set-options="displayCommandBar:true;displayViewSelector:true;displayquickfind:true">
       <!-- 'property-set' node represents a unique, configurable property that each record in the dataset must provide. -->
@@ -14,6 +14,7 @@
     <property name="displayTextType" display-name-key="Display_text_type" description-key="Display text type" of-type="Enum" usage="input" required="true">
       <value name="SIMPLE" display-name-key="No decoration" description-key="No decoration" default="true">SIMPLE</value>
       <value name="BOX" display-name-key="Colorful background" description-key="Colorful background">BOX</value>
+      <value name="OVAL" display-name-key="Colorful oval background with black text" description-key="Colorful oval background with black text">OVAL</value>
       <value name="BORDER" display-name-key="Colorful Border" description-key="Colorful Border">BORDER</value>
       <value name="NOTEXT" display-name-key="No text" description-key="Only the icon will be shown">NOTEXT</value>
     </property>

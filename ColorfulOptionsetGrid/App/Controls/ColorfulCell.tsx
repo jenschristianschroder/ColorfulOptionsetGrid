@@ -1,3 +1,4 @@
+import { BasePeoplePicker } from '@fluentui/react';
 import { Icon } from '@fluentui/react/lib/Icon';
 import * as React  from 'react';
 import { render } from 'react-dom';
@@ -8,7 +9,7 @@ export interface IColorfulCellProps {
     item: any;
     column: IGridColumn;
     metadataOptions :   Map<string, ISetupSchemaValue> | undefined;
-    displayTextType: "SIMPLE" | "BOX" | "BORDER" | "NOTEXT";    
+    displayTextType: "SIMPLE" | "BOX" | "OVAL" | "BORDER" | "NOTEXT";    
     displayIconType : "NONE" | "NAME";//| "ENVIRONMENT";
     defaultIcon: string;       
 }
@@ -33,6 +34,12 @@ export const ColorfulCell = function ColorfulCell({item, column, metadataOptions
         "BOX" : {
             backgroundColor: color==="white" ? "gray" : color, color: iconColor, borderRadius: "5px"
         }, 
+        "OVAL" : {
+            backgroundColor: color==="white" ? "gray" : color, 
+            color: "black", 
+            "text-align": "center",
+            borderRadius: "15px"
+        },
         "SIMPLE" : {             
         }, 
         "NOTEXT": {       

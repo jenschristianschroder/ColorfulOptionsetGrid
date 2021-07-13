@@ -35,7 +35,7 @@ initializeIcons();
 export interface IColorfulGridProps{
     dataset: DataSet;    
     utils : ComponentFramework.Utility;    
-    displayTextType: "SIMPLE" | "BOX" | "BORDER" | "NOTEXT";    
+    displayTextType: "SIMPLE" | "BOX" | "OVAL" | "BORDER" | "NOTEXT";    
     displayIconType : "NONE" | "NAME";// | "ENVIRONMENT";
     defaultIcon : string;
     iconConfig1 ?: string;
